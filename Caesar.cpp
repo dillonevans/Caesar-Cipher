@@ -9,7 +9,6 @@ using namespace std;
 void prompt();
 void process(string inputFile, string outputFile, int key);
 
-
 int main()
 {
     prompt();    
