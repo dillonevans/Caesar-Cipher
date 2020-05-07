@@ -2,11 +2,6 @@
 #include <iostream>
 #include <ostream>
 
-Cipher:: Cipher()
-{
-    //Default Constructor    
-}
-
 //Shifts the current character by the encryption key
 char Cipher::shift(int key, int value)
 {
@@ -25,7 +20,6 @@ char Cipher::shift(int key, int value)
 
     if (isalpha((char)value))
     {
-      
         if (value > max)
         {
             difference = value - max - 1;
