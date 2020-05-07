@@ -5,7 +5,7 @@
 
 //Method Prototypes
 void prompt();
-void process(string inputFile, string outputFile, int key);
+void process(std::string inputFile, std::string outputFile, int key);
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
 //Prompt the user for input
 void prompt()
 {
-    string in, out;
+    std::string in, out;
     int key;
     std::cout << "Enter the name of the input file >> ";
     std::cin >> in;
@@ -28,10 +28,10 @@ void prompt()
 }
 
 //Encrypt the file specified by the user
-void process(string inputFile, string outputFile, int key)
+void process(std::string inputFile, std::string outputFile, int key)
 {
     char cur;
-    string text;
+    std::string text;
     Cipher cipher;
     std::ifstream in(inputFile);
     std::ofstream out(outputFile);
